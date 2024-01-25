@@ -1,0 +1,21 @@
+hr {
+    border-color: rgba(158, 158, 158, 0.644);
+}
+
+#focaccia {
+    border-radius: 5px;
+}
+
+#featured {
+    border-left: solid rgb(255, 230, 0);
+    padding-left: 20px;
+}
+
+main {
+    width: 50%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
