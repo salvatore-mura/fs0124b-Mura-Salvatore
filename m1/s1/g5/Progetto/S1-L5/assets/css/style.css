@@ -1,0 +1,160 @@
+/* Your styles here */
+/* GENERALI */
+body {
+    color: #393d41;
+    font-size: 1.2rem;
+    font-family: 'Open Sans';
+    line-height: 1.65rem;
+    text-align: center;
+}
+
+
+h1,
+h2 {
+    color: #25a2c3;
+    /* font-family: 'Montserrat'; */
+    /* perchè nella conscegna viene scritto moserrat, ma è open sans in realà i titoli? */
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+/* HEADER */
+
+.titolo-header {
+    margin-bottom: 0px;
+    line-height: 2.5rem;
+    font-size: 2.4rem;
+    font-weight: bolder;
+    width: 300px;
+    text-align: center;
+    margin: 2.7rem auto 2.7rem auto;
+}
+
+.button-header {
+    padding: 0.6rem 1.3rem 0.6rem 1.3rem ;
+    border-radius: 7px;
+    text-transform: uppercase;
+    color: #dee1e3;
+    margin: 1.7rem 0 1.7rem 0;
+    font-weight: 900;
+}
+
+.logo-container {
+    background-color: black;
+}
+
+.logo-img {
+    height: 40px;
+    padding: 20px;
+}
+
+
+.presentazione-container {
+    background-image: url(../images/banner.jpg);
+    padding: 20px;
+    background-size: cover
+}
+
+/* MAIN */
+
+.garantisce-container h1 {
+    margin: 2.7rem 0 2.7rem 0;
+    text-align: center;
+    font-size: 2.4rem;
+    line-height: 2rem;
+    color: #dee1e3;
+}
+
+.garantisce-container div {
+    margin: 1.7rem;
+}
+
+.garantisce-container {
+    padding: 3rem;
+}
+.orange {
+    background-color: #f04c2f;
+}
+
+.main-container {
+    margin: 1.5rem;
+}
+
+.main-container h1,
+.main-container p {
+    margin: 0.7rem;
+}
+
+.garantisce-container p {
+    color: #dee1e3;
+    font-style: italic;
+}
+
+.garantisce-container h1 {
+    color: #dee1e3;
+
+}
+
+.notebook {
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.motivation-container {
+    padding: 3rem;
+}
+
+/* ARTICLES */
+
+article {
+width: 300px;
+margin: 1.3rem 0 1.3rem 0;
+}
+
+article h3 {
+    margin: 1.7rem 0 1.7rem 0;
+}
+article p { margin: 0 0 3rem 0
+}
+article img {
+    width: 300px;
+}
+
+article {
+    border: #dee1e3 solid 1px;
+    border-radius: 5px;
+}
+
+.articles {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #25a2c3;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a, footer p, footer h1, footer hr{
+    color: #c8e7f0
+}
+
+footer hr {
+    width: 200px
+}
+footer h1 {
+    margin: auto;
+    margin: 2rem 0 2rem 0;
+    font-size: 3rem;
+    font-weight: 800
+}
