@@ -4,10 +4,9 @@ html {
 }
 
 body {
-    font-family: Poppins, 'Helvetica Neue', sans-serif;
+    font-family: 'Poppins', 'Helvetica Neue', sans-serif;
     padding: 20px;
     background-image: url('../img/sfondo.png');
-    font-family: 'Poppins', sans-serif;
     font-size: medium;
 }
 
@@ -27,28 +26,158 @@ header {
 #logo {
     width: 200px;
 }
-
+a {
+    color: aliceblue;
+}
 /* MAIN */
-    main {
-        background-color: white;
-        color: black;
-        padding: 15px;
-    }
-    main h1 {
-        font-size: 40px;
-    }
-    h1 {
-        margin:30px
-    }
-    p {
-        margin: 30px;
-    }
+main {
+    background-color: white;
+    color: black;
+    padding: 50px 20px;
+    box-shadow: 0 3px 3px black;
+}
+
 /* ELEMENTI NEL MAIN - ARTICLE */
+main h1 {
+    font-size: 30px;
+}
+
+main * {
+    margin-bottom: 2rem;
+}
+
+.author-sign {
+    color: grey;
+}
+
+p,
+li {
+    line-height: 2.5rem;
+}
+
+.parti-comuni {
+    color: brown;
+}
+
+ul,
+ol {
+    margin: 0 2rem;
+}
+
+code {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.forma-code {
+    margin-bottom: 0;
+}
+
+caption {
+    font-weight: 600;
+    font-style: italic;
+    margin: 0;
+}
+
+thead {
+    background-color: dodgerblue;
+    color: white;
+    height: 6rem;
+}
+
+tr {
+    border: 3px solid white;
+}
+
+.grey-tr {
+    background-color: ghostwhite;
+}
+
+td,
+th {
+    padding: 2rem;
+}
+
+tbody {
+    border-bottom: 4px dodgerblue solid;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+    border-radius: 20px;
+
+}
 
 /* TABELLE */
 
 /* FORM */
+section {
+    background-color: rgb(209, 206, 206);
+    padding: 2rem;
+}
+
+section h1 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.inserisci-email {
+    border-radius: 0%;
+    border: 0;
+    border-bottom: 2px dashed #000;
+    padding: 10px
+}
+
+.iscriviti {
+    border-radius: 0;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
 
 /* ELEMENTI NELL' ASIDE */
+.articoli-correlati {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: large;
+}
+
+article {
+    background-color: rgb(209, 206, 206);
+    padding: 2rem;
+}
+
+aside a {
+    text-decoration: underline;
+    color: dodgerblue;
+}
+
+.date {
+    text-align: end;
+}
+
+i {
+    margin: 1rem;
+}
 
 /* FOOTER */
+footer {
+    background-color: rgb(2, 76, 105);
+    padding: 2rem;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+footer a {
+    color: rgb(218, 8, 218);
+}

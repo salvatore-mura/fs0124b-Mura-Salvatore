@@ -24,27 +24,35 @@
 
     <body>
         <header>
-            <img src="assets/img/logo.svg" id="logo"/>
+            <img src="assets/img/logo.svg" id="logo" />
             <h1>Epicode - Il blog dei developers</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
                     <li>
-                        <a href="#">Articoli</a>
+                        <i class="fas fa-arrow-right"></i>
+                        <a href="index.html">Home</a>
+                        <i class="fas fa-arrow-left"></i>
                     </li>
                     <li>
+                        <i class="fas fa-arrow-right"></i>
+                        <a href="#">Articoli</a>
+                        <i class="fas fa-arrow-left"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-arrow-right"></i>
                         <a href="#">Lavora con noi</a>
+                        <i class="fas fa-arrow-left"></i>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <article>
+            <div>
                 <h1>Come creare un template per i post </h1>
-                <p>di Mario Rossi pubblicato il 25-10-2020</p>
+                <p class="author-sign">di Mario Rossi pubblicato il 25-10-2020</p>
                 <p>
                     La prima cosa da fare è suddividere in blocchi logici la pagina,
-                    identificando le parti comuni da applicare a tutte le
+                    identificando le <span class="parti-comuni">parti comuni</span> da applicare a tutte le
                     pagine
                 </p>
                 <p>Le varie aree saranno quindi suddivise in:</p>
@@ -59,7 +67,7 @@
                         <code>&lt;footer&gt;</code>
                     </li>
                 </ul>
-                <h2>Formattazione del codice</h2>
+                <p class="forma-code">Formattazione del codice</p>
                 <p>
                     Il testo dell'articolo dovrà essere formattato per identificare tutte
                     le parti da <strong>selezionare con i CSS</strong>. Perciò i passi
@@ -97,7 +105,7 @@
                             <td>20&percnt;</td>
                             <td>17&percnt;</td>
                         </tr>
-                        <tr>
+                        <tr class="grey-tr">
                             <td>2002</td>
                             <td>35&percnt;</td>
                             <td>22&percnt;</td>
@@ -107,7 +115,7 @@
                             <td>45&percnt;</td>
                             <td>42&percnt;</td>
                         </tr>
-                        <tr>
+                        <tr class="grey-tr">
                             <td>2008</td>
                             <td>80&percnt;</td>
                             <td>51&percnt;</td>
@@ -124,40 +132,36 @@
                     dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto
                     il nostro obiettivo ed essere stati dei veri developers come loro:
                 </p>
-                <iframe>width="250" height="250"
+                <iframe>
                     src="https://www.youtube.com/watch?v=CWnqX41JHuM&list=PL1pXZXRdtA85lx0tDD38K3dSbL5DwJkN7&index=1"</iframe>
                 <section>
-                    <h2>
-                        Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla
-                        nostra newsletter:
-                    </h2>
+                    <h1>novità</h1>
+                    <p> Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter: </p>
                     <form>
-                        <input type="email" placeholder="inserisci l'email" required />
-                        <button type="submit">Iscriviti!</button>
+                        <input type="email" placeholder="inserisci l'email" required class="inserisci-email"/>
+                        <button type="submit" class="iscriviti">Iscriviti!</button>
                     </form>
                 </section>
-            </article>
+            </div>
+            <aside>
+                <h1 class="articoli-correlati">Articoli correlati</h1>
+                <article>
+                    <a>Validare il codice HTML</a>
+                    <p><i class="fas fa-tag"></i>Categoria: develop</p>
+                    <p class="date"><i class="fas fa-calendar-week"></i>Data: 18-9-2020</p>
+                </article>
+                <article>
+                    <a>Correggere la sintassi</a>
+                    <p><i class="fas fa-tag"></i>Categoria: develop</p>
+                    <p class="date"><i class="fas fa-calendar-week"></i>Data: 16-9-2020</p>
+                </article>
+                <article>
+                    <a>Meno Kb nella pagina</a>
+                    <p><i class="fas fa-tag"></i>Categoria: ottimizzazione</p>
+                    <p class="date"><i class="fas fa-calendar-week"></i>Data: 30-9-2020</p>
+                </article>
+            </aside>
         </main>
-        <br>
-        <aside>
-            <h2>Articoli correlati</h2>
-            <article>
-                <p>Validare il codice HTML</p>
-                <p>Categoria: develop</p>
-                <p>Data: 18-9-2020</p>
-            </article>
-            <article>
-                <p>Correggere la sintassi</p>
-                <p>Categoria: develop</p>
-                <p>Data: 16-9-2020</p>
-            </article>
-            <article>
-                <p>Meno Kb nella pagina</p>
-                <p>Categoria: ottimizzazione</p>
-                <p>Data: 30-9-2020</p>
-            </article>
-        </aside>
-        <br>
         <footer>
             <div>
                 <p>Blog Epicode &copy;2023</p>
@@ -173,3 +177,4 @@
     <body></body>
 
 </html>
+<!-- Michele se stai leggendo scusa se consegno questo esercizo solo ora.. Ma Giovedì stavo impezzendo così ho rimandato a tarda sera ma poi non l'ho più fatto. Cercherò di non farlo ripetere più -->
