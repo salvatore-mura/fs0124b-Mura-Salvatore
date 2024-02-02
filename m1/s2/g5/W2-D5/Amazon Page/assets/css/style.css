@@ -1,0 +1,126 @@
+/* Your styles here */
+/* GENERALI */
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.text-center {
+    text-align: center;
+    width: 100%;
+}
+
+.bg-dark {
+    color: #eaeded;
+    background-color: #222f3e
+}
+
+h1 {
+    font-size: 2.5rem
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-distance {
+    padding: 0.7rem;
+}
+
+.margin-element {
+    margin-bottom: 2rem;
+}
+
+.links {
+    color: rgb(0, 140, 255);
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #30445b;
+}
+
+nav a {
+    margin: 0.7rem;
+    text-decoration: none;
+    color: #eaeded;
+}
+
+nav ul {
+    padding: 0.7rem 2rem;
+}
+
+.inline {
+    display: flex;
+
+}
+
+/* MAIN */
+
+main {
+    padding: 0 2rem;
+}
+
+.bgyellow {
+    color: #eaeded;
+    background-color: #f56600;
+}
+
+.flex-2-elements {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.holiday {
+    background-image: url(../images/bg-image.png);
+    padding: 3rem;
+    color: #eaeded;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.white2-bg {
+    background-color: #eaeded;
+}
+
+.images-css {
+    max-height: 35rem;
+    max-width: 24rem;
+border-radius: 2rem;
+}
+
+.images-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.picture {
+    padding: 2rem;
+}
+
+.big-images {
+    height: 35rem;
+}
+
+/* FOOTER */
+
+.link-footer {
+    background-color:#30445b ;
+    color: #eaeded;
+    padding: 1rem;
+}
+
+.logo-footer {
+    background-color: #222f3e;
+    display: flex;
+    justify-content: center;
+}
