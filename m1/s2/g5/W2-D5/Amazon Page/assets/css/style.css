@@ -4,7 +4,6 @@ li {
     list-style: none;
 }
 a {
-    text-decoration: none;
     color: inherit;
 }
 .text-center {
@@ -39,7 +38,12 @@ h1 {
 }
 
 /* HEADER */
-
+#logo {
+    padding: 0 2rem;
+}
+#logo img {
+    height: 4rem;
+}
 .nav {
     display: flex;
     flex-direction: row;
