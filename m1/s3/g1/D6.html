@@ -118,7 +118,7 @@
     */
 
     function changeUrls() {
-      let links = document.querySelectorAll('a:not(#footer a)');
+      let links = document.querySelectorAll('a:not(footer a)');
       links.forEach(function (link) {
         link.href = 'https://www.google.com';
       });
@@ -153,57 +153,72 @@
      Scrivi una funzione che faccia scomparire la prima lista non ordinata
   */
 
-    const hideFirstUl = function () {
-      let list = document.querySelector('#firstChild')
-      list.remove
-    }
+    // const hideFirstUl = function () {
+    //   let list = document.querySelector('#firstChild')
+    //   list.remove
+    // }
 
-    hideFirstUl()
+    // hideFirstUl()
 
     /* ESERCIZIO 8 
      Scrivi una funzione che renda verde il background di ogni lista non ordinata
     */
 
     const paintItGreen = function () {
-      let li = document.querySelector('li')
-      li.style.backgroundColor = 'green'
+      let ul = document.querySelectorAll('ul');
+      ul.forEach(e => e.style.backgroundColor = 'green')
     }
+    paintItGreen();
 
     /* ESERCIZIO 9
      Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
     */
 
     const makeItClickable = function () {
-      const h1Element = document.querySelector('h1')
+      let h1Element = document.querySelector('h1')
 
-      h1Element.addEventListener('click', function() {
-        let lessString = h1.innerText.slice(0,-1)
-        h1.innerText = lessString
+      h1Element.addEventListener('click', function () {
+        let lessString = h1Element.innerText.slice(0, -1)
+        h1Element.innerText = lessString
       })
-  }
+    }
 
+    makeItClickable()
 
     /* ESERCIZIO 10
      Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
     */
 
     const revealFooterLink = function () {
-      let url = footer.querySelector('a')
-
+      let link = document.querySelector('footer a')
+      let url = footer.href
+      alert(url)
     }
+
+    let footer = document.querySelector('footer')
+    footer.addEventListener('click', revealFooterLink)
 
     /* ESERCIZIO 11
      Crea una funzione che crei una tabella nell'elemento con id "tableArea". 
      La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
   */
 
-    const generateTable = function () { }
+    const generateTable = function () {
+      let tag = document.querySelector('#tableArea')
+      let table = document.createElement('table')
+      table.innerHTML = '<tr><td>Imamgine</td><td>Nome Prodotto</td><td>Quantità</td><td>Prezzo</td></tr>'
+    }
+
+    generateTable()
 
     /* ESERCIZIO 12
      Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
   */
 
-    const addRow = function () { }
+    const addRow = function () {
+      let tag = document.querySelector('#tableArea')
+      
+     }
 
     /* ESERCIZIO 14
     Crea una funzione che nasconda le immagini della tabella quando eseguita

@@ -84,6 +84,7 @@ console.log(x)*/
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 // let name1 = "jhon"
+
 // let name2 = "Jhon"
 
 // console.log (name1 === name2)
