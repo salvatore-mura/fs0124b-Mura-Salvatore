@@ -1,0 +1,10 @@
+li {
+    position: relative;
+}
+  .line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid black; }
+
