@@ -1,10 +1,27 @@
-li {
-    position: relative;
-}
-  .line {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    border-top: 1px solid black; }
 
+  .line {
+    text-decoration: line-through;}
+
+h1 {
+  color: brown;
+}
+
+main {
+  background-color:darkgoldenrod;
+  display: flex;
+  justify-content: center;
+}
+
+div div{
+  display: flex;
+}
+
+li {
+  color: rgb(0, 26, 255);
+}
+
+ul button {
+  background-color: crimson;
+  color:chocolate  ;
+  border-radius: 5px;
+}
