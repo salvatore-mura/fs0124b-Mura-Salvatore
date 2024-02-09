@@ -1,0 +1,23 @@
+#numeri {
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    gap: 5px;
+    white-space: pre-wrap;
+    background-color: burlywood
+}
+
+.grid-item {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.tombola {
+    width: 60%;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
