@@ -216,7 +216,7 @@ console.log(isTodayMyBirthday(mioCompleanno))
 */
 
 function deleteProp(oggetto, stringa) {
-  if (stringa in  oggetto) {
+  if (stringa in oggetto) {
     delete oggetto[stringa]
   }
   return oggetto
@@ -228,7 +228,7 @@ let Oggetto = {
   city: "Sennori"
 };
 
-console.log(deleteProp(Oggetto,'name'))
+console.log(deleteProp(Oggetto, 'name'))
 
 /* ESERCIZIO 12
   Scrivi una funzione chiamata "newestMovie" che trova il film più recente nell'array "movies" fornito.
@@ -424,15 +424,37 @@ function searchByTitle(titolo) {
 
 console.log(searchByTitle('Avengers: Endgame'))
 
-
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
 */
 
+function searchAndDivide(stringa) {
+  let match = [];
+  let unmatch = [];
+
+  movies.forEach(movie => {
+    if (movie.Title.includes(stringa)) {
+      match.push(movie)
+    } else {
+      unmatch.push(movie)
+    }
+  })
+  return { match, unmatch };
+}
+
+console.log(searchAndDivide('Avengers'))
+
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
+
+function removeIndex(index) {
+  movies.splice(index, 1);
+  return movies;
+}
+
+console.log(removeIndex(2))
 
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
@@ -440,30 +462,75 @@ console.log(searchByTitle('Avengers: Endgame'))
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
 
-/* ESERCIZIO 21
+function selezionaContainer() {
+  let container = document.getElementById("container");
+  return container;
+}
+
+/* ESERCIZIO 21 
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
+
+function selezionaTD() {
+  let tds = document.getElementsByTagName("td")
+  return tds
+}
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
 
+function stampaTestoTD() {
+  let tds = document.getElementsByTagName("td");
+  for (let i = 0; i < tds.length; i++) {
+    console.log(tds[i].textContent)
+  }
+}
+
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
+
+function stampaTestoTD() {
+  let tds = document.getElementsByTagName("td");
+  for (let i = 0; i < tds.length; i++) {
+    console.log(tds[i].textContent);
+  }
+}
 
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
 
+function aggiungiElementoALista() {
+  let nuovoElemento = document.createElement("li")
+  let testoNuovoElemento = document.createTextNode("Nuovo elemento")
+  nuovoElemento.appendChild(testoNuovoElemento)
+  let lista = document.getElementById("myList")
+  lista.appendChild(nuovoElemento);
+}
+
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
+
+function svuotaLista() {
+  let lista = document.getElementById("myList");
+  while (lista.firstChild) {
+    lista.removeChild(lista.firstChild);
+  }
+}
 
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
 
+function aggiungiClasseATr() {
+  let trElements = document.getElementsByTagName("tr");
+  for (let i = 0; i < trElements.length; i++) {
+    trElements[i].classList.add("test");
+  }
+}
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27
@@ -478,6 +545,17 @@ console.log(searchByTitle('Avengers: Endgame'))
 
 */
 
+function halfTree(altezza) {
+  for (let i = 1; i <= altezza; i++) {
+    let riga = ''
+    for (let b = 1; b <= i; b++) {
+      riga += '*'
+    }
+    console.log(riga);
+  }
+}
+halfTree(5);
+
 /* ESERCIZIO 28
   Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
 
@@ -490,9 +568,19 @@ console.log(searchByTitle('Avengers: Endgame'))
 
 */
 
+function tree(altezza) {
+  for (let i = 1; i <= altezza; i++) {
+    let spazi = ' '.repeat(altezza - i)
+    let asterischi = '*'.repeat(2 * i - 1)
+    console.log(spazi + asterischi)
+  }
+}
+
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
+
+
 
 /* Questo array viene usato per gli esercizi. Non modificarlo. */
 
