@@ -222,18 +222,19 @@ footer a {
 
 /* MEDIA QUERY */
 
-/* SMARTPHONE */
 
-/* @media screen and (max-width: 320px) {
-  
-} */
 
-@media screen and (max-width: 576px) {}
+@media screen and (min-width: 576px) {
+    header ul {
+        display: flex;
+        justify-content: center;
+    }
+}
 
 
 /* TABLET */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
 
 
 
@@ -241,52 +242,97 @@ footer a {
     h1 {
         font-size: 3.4em;
     }
+
+    .table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    table {
+        width: 70%;
+    
+    }
 }
 
 /* DESKTOP */
 
-@media screen and (max-width: 1200px) {
-    /* Header */
+@media screen and (min-width: 1200px) {
 
-    header div * {
-        display: inline-block;
-        vertical-align: middle;
-    }
+main {
+    padding: 25px ;
+}
 
-    nav {
-        display: inline-block;
-    }
+header,  header ul, header div{
+    display: flex;
+    align-items: center;
+    padding: 7px 20px 7px 0px;
+}
 
-    header {
-        overflow: hidden;
-        position: relative;
-    }
+header {
+    justify-content: space-between;
+}
 
-    header div {
-        float: left;
-    }
+header div img {
+    margin: 0px;
+}
 
-    header nav {
-        float: right;
-    }
+header div {
+    align-items: center;
+}
 
-    header {
-        padding: 7px 40px 7px 0px;
-        height: auto;
-        text-align: left;
-    }
-
-    header ul li {
-        display: inline-block;
-        vertical-align: middle;
+header p {
     
-    }
-
+    margin: 0px;
+}
     /* Main */
 
-    /* section {
-        float: right
-    } */
+.table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 70%;
+
+}
+
+   /* Section e Video */
+
+.video-section {
+    display: flex;
+    height: 300px;
+}
+
+iframe {
+    width: 50%;
+    
+}
+
+
+section {
+    border-radius: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 10px;
+    box-sizing: border-box;
+}
+
+.articoli {
+    display: flex;
+}
+
+.articoli div {
+    flex-grow: 1;
+}
+
+section p {
+    font-size: 20px;
+    line-height: 40px;
+}
 
 }
 
