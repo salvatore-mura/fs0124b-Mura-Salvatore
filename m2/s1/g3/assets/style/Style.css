@@ -1,0 +1,94 @@
+/* FLEXIBLE CARD */
+
+.honey-card {
+    background-color: rgb(248, 223, 189);
+    border-radius: 150px;
+    width: fit-content;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+}
+
+.honey-card img {
+    border-radius: 150px 150px 0 0 ;
+}
+
+.honey-card *  {
+    margin: 0;
+    padding: 0;
+    color: rgb(119, 54, 0);
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+
+}
+
+.container-h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.card-button {
+    background-color:rgb(213, 141, 46);
+    width: 50%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+}
+
+/* NAVBAR */
+
+nav * {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(248, 223, 189);
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+.container2, .container1 {
+    background-color:rgb(222, 156, 71);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: rgb(119, 54, 0);
+}
+
+.logo {
+    width: 30px;
+}
+
+.container2 {
+    display: flex;
+    gap: 15px;
+}
+
+/* FLEXIBLE ARTICLE */
+
+.flexible-article {
+    background-color: rgb(248, 223, 189);
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    color: rgb(119, 54, 0);
+
+}

@@ -394,13 +394,12 @@ footer a {
   float: left;
 }
 
+/* Underline SVG */
+
 .h1-container {
   position: relative;
   width: fit-content;
 }
-
-
-/* Underline SVG */
 
 .underline {
   position: absolute;
