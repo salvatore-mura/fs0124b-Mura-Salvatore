@@ -1,0 +1,30 @@
+@import 'animazioni';
+@import 'bottoni';
+@import 'colori';
+@import 'font';
+@import 'mixins';
+@import 'reset';
+@import 'spaziature';
+
+.main-img {
+    @include floating
+}
+
+.card {
+    @include floating($bs: 0 10px 10px 0, $bor: 2px solid blue)
+}
+
+nav, header {
+    background-color: $violet
+}
+
+.card {
+    @include grid(4);
+    div {
+      padding-inline: 0.5rem;
+      img {
+        width: 100%;
+        @include floating;
+      }
+    }
+  }

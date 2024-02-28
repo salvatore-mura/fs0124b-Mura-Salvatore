@@ -1,0 +1,12 @@
+@import 'colori';
+$colors: (
+  scopri: $blue,
+  accedi: $orange,
+  contatti: $green,
+);
+
+@each $key, $color in $colors {
+  .btn-#{$key} {
+    background-color: $color;
+  }
+}

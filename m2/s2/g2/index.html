@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Abbiamo bisogno di un sito web per un'agenzia di viaggi!
+
+In questa pagina aggiungerai destinazioni di posti che sogni di visitare in futuro.
+
+Il progetto non richiede alcuna customizzazione di CSS, dovrai crearlo interamente usando le classi di bootstrap, sia per quello che riguarda il layout che lo stile.
+
+
+Testa frequentemente il tuo lavoro nelle 3 principali risoluzioni (mobile, tablet, desktop) usando i developer tools del browser nella sezione emulazione device, per una maggiore precisione.
+
+Inizia utilizzando i componenti esistenti di Bootstrap 5 per creare la tua pagina (modificali all'occorrenza utilizzando le utility classes di bootstrap: colori, spazi, margini, dimensioni etc...)
+Usa container > row > col-* in questo ordine per ottenere un layout responsive perfetto.
+
+Esercizi:
+
+1) Implementa una navbar con questi elementi di menu:
+Home
+Saldi
+Welcome Summer
+Last Minute
+Recensioni
+
+Collegherai ogni sezione della pagina agli elementi del menu corrispondenti. 
+
+2) Aggiungi un logo alla navbar, un qualsiasi logo di agenzia di viaggi, anche inventata.
+
+3) Aggiungi una sezione introduttiva con il nome, il payoff dell'agenzia, 
+una breve descrizione in corsivo e una call-to-action (bottone) "Prenota ora" di colore azzurro chiaro e testo bianco e grassetto
+
+Il background della sezione sarà grigio chiaro e con bordi arrotondati e del padding generoso all'interno
+
+4) Implementa la sezione "Saldi". Qui mostrerai 4 destinazioni.
+
+In questa sezione dovranno esserci:
+
+4 card per destinazioni per linea a schermo grande - desktop (quattro sulla stessa linea)
+3 card per destinazioni per linea a schermo medio  - tablet  (una dovrà scomparire)
+2 card per destinazioni per linea a schermo piccolo - mobile (due per linea)
+
+le card avranno un bordo di 2px azzurro chiaro, il bottone azzurro chiaro e testo default
+
+5) Implementa la sezione "Welcome Summer". Qui mostrerai 6 destinazioni al tuo utente. (nessun bordo, ma stesso stile dei bottoni precedenti)
+
+In questa sezione dovranno esserci:
+
+6 card per destinazioni per linea a schermo extra large
+3 card per destinazioni per linea a schermo grande (desktop)
+2 card per destinazioni per linea a schermo medio (tablet)
+2 card per destinazioni per linea a schermo piccolo (mobile)
+
+6) Implementa la sezione "Offerta del giorno". Qui avrai:
+
+66% dello spazio dedicato all'immagine del luogo di destinazione
+33% dedicato al nome, date, prezzo e un badge con "best offer" come testo
+
+l'immagine avrà i bordi arrotondati e un'ombra leggera
+per il contenuto: il nome dovrà essere più grande del resto,
+le date dovranno essere formattate con font "monospace",
+il prezzo dovrà essere definito come "lead"
+e il badge sarà scuro
+
+
+7) Rendi invisibile la sezione "Offerta del giorno" su schermi piccoli.
+
+8) Aggiungi nella sezione "Welcome Summer" un'ombra grande ad ogni card.
+
+9) Crea una sezione "Last Minute", in cui mostrerai 6 immagini delle destinazioni last minute come rettangoli ombreggiati dai bordi arrotondati, senza testo. Rendile responsive come preferisci!
+
+10) Crea una sezione "Recensioni", dove l'utente potrà trovare alcuni feedback da utenti fittizi. 
+Piccola immagine tonda a sinistra con bordo 2px azzurro, nome utente e recensione a destra
+
+11) Crea un footer con le informazioni dell'agenzia e un bottone "Contattaci".
+
+
+
+EXTRAS
+
+12) Crea un bottone vicino ad ogni sezione per collassarla e riaprirla se premuto.
+
+13) Crea la possibilità di contare il numero di "viaggi" presenti sulla pagina e visualizzare il risultato in un alert.
+
+14) Crea un modale con un campo email e un messaggio.
+
+15) Quando l'utente cliccherà su "Contattaci", il modale dovrà essere visualizzato.
+
+16) Crea una funzione che aggiunga un badge con la scritta "HOT" su ognuna delle offerte "Welcome Summer" posizionato in alto a destra.
+
+17) Crea una funzione che rimuova tutte le "card" dalla pagina
+
+-->
+</head>
+
+<body>
+    <nav class="py-2 px-5 navbar navbar-expand-lg bg-light">
+        <div class="container d-flex align-items-center">
+            <div class="navbar-b me-3">
+                <img src="img/logo.avif" alt="" style="height: 40px;">
+            </div>
+            <ul class="navbar-nav me-auto ">
+                <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#saldi" class="nav-link">Saldi</a></li>
+                <li class="nav-item"><a href="#welcome-summer" class="nav-link">Welcome Summer</a></li>
+                <li class="nav-item"><a href="#last-minute" class="nav-link">Last Minute</a></li>
+                <li class="nav-item"><a href="#recensioni" class="nav-link">Recensioni</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <aside class="container introduction bg-light p-5 pt-4 mt-5">
+        <div>
+            <div class="">
+                <h1>Lorem Ipsum</h1>
+                <p>lorem lorem lorem</p>
+            </div>
+            <hr>
+            <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="bg-info text-light fw-bold">Prenota!</button>
+        </div>
+    </aside>
+    <main class="containeer">
+            <section class="saldi container" id="saldi">
+                <h1>Saldi</h1>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 border  col-md-4 border-info">
+                        <article class="custom-card">
+                            <img src="img/1600X1600_venezia_ponte_tramonto.webp" alt="" class="card-img-top">
+                            <h3>Titolo</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quas placeat dolores
+                                cupiditate aspernatur veniam, modi quo animi eos provident officia ratione minima.</p>
+                            <button class="bg-info text-light fw-bold">Prenota</button>
+                        </article>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 border col-md-4 border-info">
+                        <article class="custom-card">
+                            <img src="img/1600X1600_venezia_ponte_tramonto.webp" alt="" class="card-img-top">
+                            <h3>Titolo</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quas placeat dolores
+                                cupiditate aspernatur veniam, modi quo animi eos provident officia ratione minima.</p>
+                            <button class="bg-info text-light fw-bold">Prenota</button>
+                        </article>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-md-4 border border-info">
+                        <article class="custom-card">
+                            <img src="img/1600X1600_venezia_ponte_tramonto.webp" alt="" class="card-img-top">
+                            <h3>Titolo</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quas placeat dolores
+                                cupiditate aspernatur veniam, modi quo animi eos provident officia ratione minima.</p>
+                            <button class="bg-info text-light fw-bold">Prenota</button>
+                        </article>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 border border-2 border-info d-md-none d-lg-block">
+                        <article class="custom-card">
+                            <img src="img/1600X1600_venezia_ponte_tramonto.webp" alt="" class="card-img-top">
+                            <h3>Titolo</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quas placeat dolores
+                                cupiditate aspernatur veniam, modi quo animi eos provident officia ratione minima.</p>
+                            <button class="bg-info text-light fw-bold">Prenota</button>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+        <section class="welcome-summer container" id="welcome-summer">
+            <h1>Welcome Summer</h1>
+            <div class="row">
+                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6 col-sm-6 border border-2 border-info">
+                    <article class="custom-card col-12 col-sm-6 col-xl-4 mb-4">
+                        <img src="img/1600X1600_venezia_ponte_tramonto.webp" alt="" class="card-img-top">
+                        <h3>Titolo</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quas placeat dolores
+                            cupiditate aspernatur veniam, modi quo animi eos provident officia ratione minima.</p>
+                        <button class="bg-info text-light fw-bold">Prenota</button>
+                    </article>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6 col-sm-6 border border-2 border-info">
+                    <article class="custom-card col-12 col-sm-6 col-xl-4 mb-4">
+                        <img src="img/1600X1600_venezia_ponte_tramonto.webp" alt="" class="card-img-top">
+                        <h3>Titolo</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quas placeat dolores
+                            cupiditate aspernatur veniam, modi quo animi eos provident officia ratione minima.</p>
+                        <button class="bg-info text-light fw-bold">Prenota</button>
+                    </article>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6 col-sm-6 border border-2 border-info">
+                    <article class="custom-card col-12 col-sm-6 col-xl-4 mb-4">
+                        <img src="img/1600X1600_venezia_ponte_tramonto.webp" alt="" class="card-img-top">
+                        <h3>Titolo</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quas placeat dolores
+                            cupiditate aspernatur veniam, modi quo animi eos provident officia ratione minima.</p>
+                        <button class="bg-info text-light fw-bold">Prenota</button>
+                    </article>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6 col-sm-6 border border-2 border-info">
+                    <article class="custom-card col-12 col-sm-6 col-xl-4 mb-4">
+                        <img src="img/1600X1600_venezia_ponte_tramonto.webp" alt="" class="card-img-top">
+                        <h3>Titolo</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quas placeat dolores
+                            cupiditate aspernatur veniam, modi quo animi eos provident officia ratione minima.</p>
+                        <button class="bg-info text-light fw-bold">Prenota</button>
+                    </article>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6 col-sm-6 border border-2 border-info">
+                    <article class="custom-card col-12 col-sm-6 col-xl-4 mb-4">
+                        <img src="img/1600X1600_venezia_ponte_tramonto.webp" alt="" class="card-img-top">
+                        <h3>Titolo</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quas placeat dolores
+                            cupiditate aspernatur veniam, modi quo animi eos provident officia ratione minima.</p>
+                        <button class="bg-info text-light fw-bold">Prenota</button>
+                    </article>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6 border border-2 border-info">
+                    <article class="custom-card col-12 col-sm-6 col-xl-4 mb-4">
+                        <img src="img/1600X1600_venezia_ponte_tramonto.webp" alt="" class="card-img-top">
+                        <h3>Titolo</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quas placeat dolores
+                            cupiditate aspernatur veniam, modi quo animi eos provident officia ratione minima.</p>
+                        <button class="bg-info text-light fw-bold">Prenota</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="my-5 d-none d-sm-block container" id="last-minute">
+            <h3 class="mb-4 text-center">Offerta del giorno</h3>
+            <div class="row ">
+                <div class="col-4 col-md-4 col-lg">
+                    <img src="img/1600X1600_venezia_ponte_tramonto.webp" alt="" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-8">
+                    <div class="">
+                        <h3 class="display-4 lh-1">Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt fuga, saepe, exercitationem itaque voluptas nemo cumque quisquam dolorum hic rerum quo alias quod ipsum, aspernatur sequi similique error laboriosam excepturi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        
+        <section class="container" id="recensioni">
+            <h1>Last Minute</h1>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg">
+                    <img src="img/1600X1600_venezia_ponte_tramonto.webp" alt="" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-6 col-md-4 col-lg">
+                    <img src="img/1600X1600_venezia_ponte_tramonto.webp" alt="" class="img-fluid rounded shadow">
+                </div> 
+                <div class="col-6 col-md-4 col-lg">
+                    <img src="img/1600X1600_venezia_ponte_tramonto.webp" alt="" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-6 col-md-4 col-lg">
+                    <img src="img/1600X1600_venezia_ponte_tramonto.webp" alt="" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-6 col-md-4 col-lg">
+                    <img src="img/1600X1600_venezia_ponte_tramonto.webp" alt="" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-6 col-md-4 col-lg">
+                    <img src="img/1600X1600_venezia_ponte_tramonto.webp" alt="" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+            <article  class="col-12 d-flex flex-row">
+                <div>
+                    <img src="img/550980-utente-icona-gratuito-vettoriale.jpg" alt="" class="rounded-circle" style="height:40px">
+                </div>
+                <div>
+                    <p>Utente</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia obcaecati, saepe similique ut repudiandae adipisci beatae officia odio architecto error, molestias id, cupiditate iusto blanditiis ad aliquam. Placeat, esse illum!</p>
+                </div>
+            </article>
+        </div>
+        </section>
+        <section class="container">
+            <div class="row">
+            <article  class="col-12 d-flex flex-row">
+                <div>
+                    <img src="img/550980-utente-icona-gratuito-vettoriale.jpg" alt="" class="rounded-circle" style="height:40px">
+                </div>
+                <div>
+                    <p>Utente</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia obcaecati, saepe similique ut repudiandae adipisci beatae officia odio architecto error, molestias id, cupiditate iusto blanditiis ad aliquam. Placeat, esse illum!</p>
+                </div>
+            </article>
+        </div>
+        </section><section class="container">
+            <div class="row">
+            <article  class="col-12 d-flex flex-row">
+                <div>
+                    <img src="img/550980-utente-icona-gratuito-vettoriale.jpg" alt="" class="rounded-circle" style="height:40px">
+                </div>
+                <div>
+                    <p>Utente</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia obcaecati, saepe similique ut repudiandae adipisci beatae officia odio architecto error, molestias id, cupiditate iusto blanditiis ad aliquam. Placeat, esse illum!</p>
+                </div>
+            </article>
+        </div>
+        </section><section class="container">
+            <div class="row">
+            <article  class="col-12 d-flex flex-row">
+                <div>
+                    <img src="img/550980-utente-icona-gratuito-vettoriale.jpg" alt="" class="rounded-circle" style="height:40px">
+                </div>
+                <div>
+                    <p>Utente</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia obcaecati, saepe similique ut repudiandae adipisci beatae officia odio architecto error, molestias id, cupiditate iusto blanditiis ad aliquam. Placeat, esse illum!</p>
+                </div>
+            </article>
+        </div>
+        </section><section class="container">
+            <div class="row">
+            <article  class="col-12 d-flex flex-row">
+                <div>
+                    <img src="img/550980-utente-icona-gratuito-vettoriale.jpg" alt="" class="rounded-circle" style="height:40px">
+                </div>
+                <div>
+                    <p>Utente</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia obcaecati, saepe similique ut repudiandae adipisci beatae officia odio architecto error, molestias id, cupiditate iusto blanditiis ad aliquam. Placeat, esse illum!</p>
+                </div>
+            </article>
+        </div>
+        </section><section class="container">
+            <div class="row">
+            <article  class="col-12 d-flex flex-row">
+                <div>
+                    <img src="img/550980-utente-icona-gratuito-vettoriale.jpg" alt="" class="rounded-circle" style="height:40px">
+                </div>
+                <div>
+                    <p>Utente</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia obcaecati, saepe similique ut repudiandae adipisci beatae officia odio architecto error, molestias id, cupiditate iusto blanditiis ad aliquam. Placeat, esse illum!</p>
+                </div>
+            </article>
+        </div>
+        </section>
+    </main>
+    <footer class="bg-primary">
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="d-flex justify-content-center">
+        <button class="bg-danger text-light">Contattaci</button>
+        </div>
+
+    </footer>
+</body>
+
+</html>
