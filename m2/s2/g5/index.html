@@ -10,12 +10,13 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body class="bg-dark">
-    <nav class="navbar navbar-expand">
-        <div class="container-fluid d-flex justify-content-between mx-2">
+<body class="bg-dark m-0-auto">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand px-4">
+        <div class="container-fluid d-flex justify-content-between">
             <ul class="navbar-nav mr-auto">
                 <li class="navbar-brand"><a href="#">
-                        <img src="assets/netflix_logo.png" alt="logo"" height=" 40">
+                        <img src="assets/netflix_logo.png" alt="logo" height="40">
                     </a></li>
                 <li class="nav-item"><a href="" class="nav-link link-light">Home</a></li>
                 <li class="nav-item"><a href="" class="nav-link link-light">TV Shows</a></li>
@@ -31,49 +32,65 @@
                     <img src="assets/kids_icon.png" alt="" height="30" class="mr-1">
                 </a>
                 <div>
-                    <img src="assets/svg/user.svg" alt="">
+                    <a href="profile.html">
+                        <img src="assets/svg/user.svg" alt="">
+                    </a>
                     <img src="assets/svg/caret-down-fill.svg" alt="">
                 </div>
             </div>
         </div>
     </nav>
-    <aside class="container-fluid d-flex justify-content-between mx-2 mb-4">
-        <div>
-            <h1 class="text-light">TV Shows</h1>
-            <div class="dropdown">
-                <button class="btn border border-light btn-secondary dropdown-toggle" type="button" id="genreDropdown"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Seleziona Genere
-                </button>
-                <ul class="dropdown-menu " aria-labelledby="genreDropdown">
-                    <li><a class="dropdown-item" href="#">Azione</a></li>
-                    <li><a class="dropdown-item" href="#">Avventura</a></li>
-                    <li><a class="dropdown-item" href="#">Commedia</a></li>
-                </ul>
+    <!-- UNDER-NAV -->
+    <aside class="px-4">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="d-flex gap-4 align-items-center">
+                <h1 class="text-light">TV Shows</h1>
+                <div class="dropdown">
+                    <button class="btn border border-light btn-secondary dropdown-toggle" type="button"
+                        id="genreDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Seleziona Genere
+                    </button>
+                    <ul class="dropdown-menu " aria-labelledby="genreDropdown">
+                        <li><a class="dropdown-item" href="#">Azione</a></li>
+                        <li><a class="dropdown-item" href="#">Avventura</a></li>
+                        <li><a class="dropdown-item" href="#">Commedia</a></li>
+                    </ul>
+                </div>
             </div>
+            <div>CIAO</div>
         </div>
-
-    </aside>
-    <main class="mb-5">
+        <!-- FILMS -->
+    </aside> -->
+     <main class="mb-5 px-4">
         <section class="container-fluid mb-5">
             <h3 class="text-light">Trending Now</h3>
             <div class="row">
-                <img src="assets/media/media0.webp" alt="" class="col-2"><img src="assets/media/media1.jpg" alt="" class="col-2"><img src="assets/media/media10.jpg" alt="" class="col-2"><img src="assets/media/media11.jpg" alt="" class="col-2"><img src="assets/media/media12.jpg" alt="" class="col-2"><img src="assets/media/media13.jpg" alt="" class="col-2">
+                <img src="assets/media/media0.webp" alt="" class="col-2"><img src="assets/media/media1.jpg" alt=""
+                    class="col-2"><img src="assets/media/media10.jpg" alt="" class="col-2"><img
+                    src="assets/media/media11.jpg" alt="" class="col-2"><img src="assets/media/media12.jpg" alt=""
+                    class="col-2"><img src="assets/media/media13.jpg" alt="" class="col-2">
             </div>
         </section>
         <section class="container-fluid mb-5">
             <h3 class="text-light">Watch It Again</h3>
             <div class="row">
-                <img src="assets/media/media14.webp" alt="" class="col-2"><img src="assets/media/media15.jpg" alt="" class="col-2"><img src="assets/media/media16.webp" alt="" class="col-2"><img src="assets/media/media17.jpg" alt="" class="col-2"><img src="assets/media/media18.jpg" alt="" class="col-2"><img src="assets/media/media19.webp" alt="" class="col-2">
+                <img src="assets/media/media14.webp" alt="" class="col-2"><img src="assets/media/media15.jpg" alt=""
+                    class="col-2"><img src="assets/media/media16.webp" alt="" class="col-2"><img
+                    src="assets/media/media17.jpg" alt="" class="col-2"><img src="assets/media/media18.jpg" alt=""
+                    class="col-2"><img src="assets/media/media19.webp" alt="" class="col-2">
             </div>
         </section>
         <section class="container-fluid mb-5">
             <h3 class="text-light">New Releases</h3>
             <div class="row">
-                <img src="assets/media/media20.jpg" alt="" class="col-2"><img src="assets/media/media21.webp" alt="" class="col-2"><img src="assets/media/media22.webp" alt="" class="col-2"><img src="assets/media/media23.webp" alt="" class="col-2"><img src="assets/media/media24.jpg" alt="" class="col-2"><img src="assets/media/media25.webp" alt="" class="col-2">
+                <img src="assets/media/media20.jpg" alt="" class="col-2"><img src="assets/media/media21.webp" alt=""
+                    class="col-2"><img src="assets/media/media22.webp" alt="" class="col-2"><img
+                    src="assets/media/media23.webp" alt="" class="col-2"><img src="assets/media/media24.jpg" alt=""
+                    class="col-2"><img src="assets/media/media25.webp" alt="" class="col-2">
             </div>
         </section>
-    </main>
+    </main> 
+    <!-- FOOTER -->
     <footer class="container">
         <div class="">
             <img src="assets/svg/instagram.svg" alt="">
@@ -96,9 +113,9 @@
             <p class="col text-light">Lorem, ipsum.</p>
             <p class="col text-light">Lorem, ipsum.</p>
         </div>
-        <button class="">Service Code</button>
+        <button class="bg-dark border border-light text-light p-2">Service Code</button>
         <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-    </footer>
+    </footer> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
