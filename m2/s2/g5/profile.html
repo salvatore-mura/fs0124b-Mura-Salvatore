@@ -18,14 +18,15 @@
         <div>
             <h1 class="display-1 text-light">Edit Profile</h1>
             <hr class="border border-secondary">
-            <div class="d-flex ">
-                <img src="assets/avatar.png" alt="" class="mx-4" height="120">
+            <div class="d-flex gap-4">
+                <img src="assets/avatar.png" alt="" class="" height="160">
                 <div>
-                    <h3 class="text-light bg-secondary fs-4 p-2">Strive Student</h3>
+                    <h3 class="text-light bg-secondary fs-4 p-2 mb-4">Strive Student</h3>
                     <div class="dropdown">
-                        <button class="btn border border-light btn-secondary dropdown-toggle" type="button"
+                        <h5 class="text-light ">Languages</h5>
+                        <button class="btn border border-light btn-dark dropdown-toggle rounded-0 mb-3" type="button"
                             id="genreDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                            Language
+                            Languages
                         </button>
                         <ul class="dropdown-menu " aria-labelledby="genreDropdown">
                             <li><a class="dropdown-item" href="#">Italiano</a></li>
@@ -33,24 +34,35 @@
                             <li><a class="dropdown-item" href="#">Francais</a></li>
                         </ul>
                         <hr class="border border-secondary">
-                        <h3 class="text-light">Maturity Setting</h3>
-                        <button class="btn btn-secondary">ALL MATURITY RATINGS</button>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        <button>EDIT</button>
+                        <h5 class="text-light mb-3">Maturity Setting:</h5>
+                        <button class="btn btn-secondary radius-0 mb-3">ALL MATURITY RATINGS</button>
+                        <p class="text-light">Show titles of <b>all maturity rating</b> for this profile.</p>
+                        <button class="bg-dark px-4 border-secondary text-secondary mb-3">EDIT</button>
                         <hr class="border border-secondary">
-                        <h3>Autoplay controls</h3>
+                        <h5 class="text-light">Autoplay controls</h5>
                         <div>
-                            <img src="assets/svg/check2-square.svg" alt="">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, porro. Beatae, placeat!
-                            </p>
-                        </div>
-                        <div>
-                            <img src="assets/svg/check2-square.svg" alt="">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, porro. Beatae, placeat!
-                            </p>
+                            <div class="list-group custom-checklist shadow-none d-flex flex-row align-items-center">
+                                <input class="form-check-input me-1 bg-dark btn-md radius-0 p-3" type="checkbox"
+                                    value="" id="checkbox1">
+                                <p class="text-light m-0">Autoplay next episode in a series on all devices.</p>
+                            </div>
+                            <div class="list-group custom-checklist shadow-none d-flex flex-row align-items-center">
+                                <input class="form-check-input me-1 bg-dark btn-md radius-0 p-3" type="checkbox"
+                                    value="" id="checkbox1">
+                                <p class="text-light m-0">Autoplay preview while browsing on all devices.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <hr class="border border-secondary">
+            <div class="btn-group d-flex gap-3">
+                <input type="radio" class="btn-check bg-dark" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn radius-0 btn-outline-light" for="btnradio1">SAVE</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn border radius-0 btn-outline-light" for="btnradio2">CANCEL</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn border radius-0 btn-outline-light" for="btnradio3">DELETE PROFILE</label>
             </div>
         </div>
     </div>
