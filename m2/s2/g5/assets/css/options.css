@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+.container-under-main {
+    width: 60%;
+}
+
+.width-80 {
+    width: 80%;
+}
+
+.width-20 {
+    width: 20%;
+}
+
+/* HO USATO ALCUNE CLASSI CSS PERCHE BT NON FUNZIONAVA E NON CAPIVO IL PERCHE, PER ESMPIO W-20 */
