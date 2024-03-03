@@ -16,7 +16,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand px-4">
         <div class="container-fluid d-flex justify-content-between">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto flex-column flex-md-row">
                 <li class="navbar-brand"><a href="#">
                         <img src="assets/netflix_logo.png" alt="logo" height="40">
                     </a></li>
@@ -26,14 +26,16 @@
                 <li class="nav-item"><a href="" class="nav-link link-light">Recently Added</a></li>
                 <li class="nav-item"><a href="" class="nav-link link-light">My list</a></li>
             </ul>
-            <div class="navbar-nav mr-auto d-flex align-items-center">
-                <img src="assets/svg/search.svg" alt="" class="ml-auto p-2">
-                <p class="text-light m-0 p-2">KIDS</p>
-                <img src="assets/svg/bell.svg" alt="" class="p-2">
-                <a href="profile.html" class="d-flex align-items-center">
-                    <img src="assets/kids_icon.png" alt="" height="30" class="mr-1">
-                </a>
-                <img src="assets/svg/caret-down-fill.svg" alt="">
+            <div class="align-self-start">
+                <div class="navbar-nav mr-auto d-flex align-items-center">
+                    <img src="assets/svg/search.svg" alt="" class="ml-auto p-2">
+                    <p class="text-light m-0 p-2">KIDS</p>
+                    <img src="assets/svg/bell.svg" alt="" class="p-2">
+                    <a href="profile.html" class="d-flex align-items-center">
+                        <img src="assets/kids_icon.png" alt="" height="30" class="mr-1">
+                    </a>
+                    <img src="assets/svg/caret-down-fill.svg" alt="">
+                </div>
             </div>
         </div>
     </nav>
@@ -62,34 +64,40 @@
         <section class="container-fluid mb-5">
             <h3 class="text-light">Trending Now</h3>
             <div class="row">
-                <img src="assets/media/media0.webp" alt="" class="col-2"><img src="assets/media/media1.jpg" alt=""
-                    class="col-2"><img src="assets/media/media10.jpg" alt="" class="col-2"><img
-                    src="assets/media/media11.jpg" alt="" class="col-2"><img src="assets/media/media12.jpg" alt=""
-                    class="col-2"><img src="assets/media/media13.jpg" alt="" class="col-2">
+                <img src="assets/media/media0.webp" alt="" class="col-lg-2 col-6 col-md-3 col-sm-4"><img
+                    src="assets/media/media1.jpg" alt="" class="col-lg-2 col-6 col-md-3 col-sm-4"><img
+                    src="assets/media/media10.jpg" alt="" class=" d-none col-lg-2 col-md-3 d-sm-block col-sm-4"><img
+                    src="assets/media/media11.jpg" alt="" class="col-lg-2 d-none d-md-block col-md-3"><img
+                    src="assets/media/media12.jpg" alt="" class="col-lg-2 d-none d-lg-block"><img
+                    src="assets/media/media13.jpg" alt="" class="col-lg-2 d-none d-lg-block">
             </div>
         </section>
         <section class="container-fluid mb-5">
             <h3 class="text-light">Watch It Again</h3>
             <div class="row">
-                <img src="assets/media/media14.webp" alt="" class="col-2"><img src="assets/media/media15.jpg" alt=""
-                    class="col-2"><img src="assets/media/media16.webp" alt="" class="col-2"><img
-                    src="assets/media/media17.jpg" alt="" class="col-2"><img src="assets/media/media18.jpg" alt=""
-                    class="col-2"><img src="assets/media/media19.webp" alt="" class="col-2">
+                <img src="assets/media/media14.webp" alt="" class="col-lg-2 col-6 col-md-3 col-sm-4"><img
+                    src="assets/media/media15.jpg" alt="" class="col-lg-2 col-6 col-md-3 col-sm-4"><img
+                    src="assets/media/media16.webp" alt="" class="col-lg-2 d-none col-md-3 d-sm-block col-sm-4"><img
+                    src="assets/media/media17.jpg" alt="" class="col-lg-2 d-none d-md-block col-md-3"><img
+                    src="assets/media/media18.jpg" alt="" class="col-lg-2 d-none d-lg-block"><img
+                    src="assets/media/media19.webp" alt="" class="col-lg-2 d-none d-lg-block">
             </div>
         </section>
         <section class="container-fluid mb-5">
             <h3 class="text-light">New Releases</h3>
             <div class="row">
-                <img src="assets/media/media20.jpg" alt="" class="col-2"><img src="assets/media/media21.webp" alt=""
-                    class="col-2"><img src="assets/media/media22.webp" alt="" class="col-2"><img
-                    src="assets/media/media23.webp" alt="" class="col-2"><img src="assets/media/media24.jpg" alt=""
-                    class="col-2"><img src="assets/media/media25.webp" alt="" class="col-2">
+                <img src="assets/media/media20.jpg" alt="" class="col-lg-2 col-6 col-md-3   col-sm-4"><img
+                    src="assets/media/media21.webp" alt="" class="col-lg-2 col-6 col-md-3   col-sm-4"><img
+                    src="assets/media/media22.webp" alt="" class="col-lg-2 d-none d-sm-block col-md-3 col-sm-4"><img
+                    src="assets/media/media23.webp" alt="" class="col-lg-2 d-none d-md-block col-md-3  "><img
+                    src="assets/media/media24.jpg" alt="" class="col-lg-2 d-none d-lg-block"><img
+                    src="assets/media/media25.webp" alt="" class="col-lg-2 d-none d-lg-block">
             </div>
         </section>
     </main>
     <!-- FOOTER -->
-    <footer class="container">
-        <div class="">
+    <footer class="container ">
+        <div class="d-flex gap-2">
             <img src="assets/svg/instagram.svg" alt="">
             <img src="assets/svg/twitter.svg" alt="">
             <img src="assets/svg/facebook.svg" alt="">
