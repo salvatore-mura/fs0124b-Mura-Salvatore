@@ -1,0 +1,26 @@
+<h1>Benvenuto nel blog</h1>
+<div class="card" *ngIf="postInEvidence">
+  <div class="card-header">
+    {{ postInEvidence.title }}
+  </div>
+  <div class="card-body">
+    <p class="card-text">{{ postInEvidence.body }}</p>
+    <ul class="list-group list-group-flush">
+      <li *ngFor="let tag of postInEvidence.tags" class="list-group-item">{{ tag }}</li>
+    </ul>
+  </div>
+</div>
+<h2>Potrebbe interessarti anche</h2>
+<div>
+  <div *ngFor="let post of postRandom">
+    <div class="card-header">
+      {{ post.title }}
+    </div>
+    <div class="card-body">
+      <p class="card-text">{{ post.body }}</p>
+      <ul class="list-group list-group-flush">
+        <li *ngFor="let tag of post.tags" class="list-group-item">{{ tag }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
