@@ -1,0 +1,19 @@
+<div class="d-flex justify-content-center m-3">
+  <div class="logo-brand d-flex justify-content-center bg-dark-subtle p-3 align-items-center gap-2">
+    <img [src]="fiatArr[0].brandLogo" alt="" class="rounded-3 border-3">
+    <p>Ecco le nostre auto Fiat:</p>
+  </div>
+</div>
+<div class="d-flex justify-content-center gap-3">
+  <div *ngFor="let car of fiatArr" class="container-cards p-3 rounded-2 my-3"
+    [ngStyle]="{'background-color': car.available ? 'green' : 'red'}">
+    <img [src]="car.modelImage" alt="" class="img-car">
+    <div class="">
+      <p>Brand:{{car.brand}}</p>
+      <p>Modello:{{car.model}}</p>
+      <p>Anno:{{car.year}}</p>
+      <p>Prezzo{{car.price | currency: 'EUR' }}</p>
+    </div>
+    <p>Disponibilità:{{car.available ? 'Si' : 'No'}}</p>
+  </div>
+</div>
