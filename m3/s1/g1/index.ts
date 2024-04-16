@@ -1,8 +1,7 @@
 interface telefonoCellulare {
     credito: number
     numeroChiamate: number
-    }
-
+}
 
 class User implements telefonoCellulare {
     nome: string
@@ -10,17 +9,17 @@ class User implements telefonoCellulare {
     credito: number = 0
     numeroChiamate: number = 0
     costoChiamata: number = 0.20
-    
+
     constructor(nome: string, cognome: string) {
         this.nome = nome
         this.cognome = cognome
     }
-    
+
     ricarica(valoreRicarica: number): void {
         this.credito += valoreRicarica
         console.log('Ricarica effettuata.');
     }
-    
+
     chiamata(minuti: number): void {
         const totaleMinuti = this.costoChiamata * minuti;
         if (this.credito >= totaleMinuti) {
@@ -31,15 +30,15 @@ class User implements telefonoCellulare {
             console.log('Credito insufficiente.')
         }
     }
-    
+
     chiama404(): number {
         return this.credito
     }
-    
+
     getNumeroChiamate(): number {
         return this.numeroChiamate
     }
-    
+
     azzeraChiamate(): void {
         this.numeroChiamate = 0
         console.log("Numero chiamate azzerato.")
