@@ -4,23 +4,20 @@ import java.util.Scanner;
 
 public class Es4 {
     public static void main(String[] args) {
+    	//SCANNER
         Scanner scanner = new Scanner(System.in);
         
         System.out.print("Inserisci un numero: ");
         int numero = scanner.nextInt();
         
-        stampaConVirgole(numero);
+        stampa(numero);
         
         scanner.close();
     }
     
-    public static void stampaConVirgole(int num) {
+    public static void stampa(int num) {
         for (int i = num; i > 0; i--) {
-            System.out.print(i);
-            if (i != 1) {
-                System.out.print(", ");
-            }
-        }
-        System.out.println();
+        System.out.println(i);
+    }
     }
 }

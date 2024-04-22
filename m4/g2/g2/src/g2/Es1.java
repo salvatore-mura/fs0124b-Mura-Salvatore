@@ -2,8 +2,11 @@ package g2;
 
 public class Es1 {
     public static void main(String args[]) {
+    	//Ritorna false perche ha 5 caratteri ed è dispari
         pariEDispari("Heyyy");
+      //Ritorna false perche ha 6 caratteri ed è pari
         pariEDispari("ttok??");
+        //Calcolo anno bisestile
         Bisestile(1234);
         Bisestile(2008);
         Bisestile(2200);
